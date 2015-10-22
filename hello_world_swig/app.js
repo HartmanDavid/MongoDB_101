@@ -7,7 +7,7 @@ app.set('view engine', 'html');
 app.set('views', __dirname + '/views');
 
 app.get('/', function(req, res){
-    res.render('hello', { name : 'World' });
+    res.render('hello', { name : 'Swig' });
 });
 
 app.get('*', function(req, res){
