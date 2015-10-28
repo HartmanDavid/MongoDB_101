@@ -3,7 +3,7 @@ var MongoClient = require('mongodb').MongoClient;
 MongoClient.connect('mongodb://localhost:27017/course', function(err, db) {
     if(err) throw err;
 
-    var query = { 'title' : { '$regex' : 'Microsoft' } };
+    var query = { 'title' : { '$regex' : 'CISA' } };
 
     var projection = { 'title' : 1, '_id' : 0 };
 

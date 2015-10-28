@@ -4,7 +4,7 @@
   "description": "handout",
   "main": "app.js",
   "dependencies": {
-    "mongodb": "~1.4.34"
+    "mongodb": "~2.0.0"
   },
   "author": "You",
   "license": "BSD",
