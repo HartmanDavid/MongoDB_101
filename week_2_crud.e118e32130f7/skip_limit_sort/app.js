@@ -8,8 +8,8 @@ MongoClient.connect('mongodb://localhost:27017/course', function(err, db) {
     var cursor = grades.find({});
     cursor.skip(1);
     cursor.limit(4);
-    cursor.sort('grade', 1);
-    //cursor.sort([['grade', 1], ['student', -1]]);
+    // cursor.sort('grade', 1);
+    cursor.sort([['grade', 1], ['student', -1]]);
 
     //var options = { 'skip' : 1,
     //                'limit' : 4,
